@@ -9,11 +9,11 @@ KLEE=~/workspace/btp/klee/build/bin/klee
 KLEEINC=~/workspace/btp/klee/include/
 KLEEARGS="--optimize=false --posix-runtime --external-calls=all --suppress-external-warnings --only-output-states-covering-new --exit-on-error-type=Assert"
 KLEESTATS=~/workspace/btp/klee/build/bin/klee-stats
-CC=clang
-CFLAGS="-g -c -emit-llvm -Xclang -disable-O0-optnone -I utilities -I $KLEEINC"
-LLVMDIS=llvm-dis
-LLVMLINK=llvm-link
-OPT=opt
+CC=~/workspace/btp/clang+llvm-11.1.0-x86_64-linux-gnu-ubuntu-20.10/bin/clang
+CFLAGS="-g -c -emit-llvm -Xclang -disable-O0-optnone -I utilities -I $KLEEINC -O2"
+LLVMDIS=~/workspace/btp/clang+llvm-11.1.0-x86_64-linux-gnu-ubuntu-20.10/bin/llvm-dis
+LLVMLINK=~/workspace/btp/clang+llvm-11.1.0-x86_64-linux-gnu-ubuntu-20.10/bin/llvm-link
+OPT=~/workspace/btp/clang+llvm-11.1.0-x86_64-linux-gnu-ubuntu-20.10/bin/opt
 
 mkdir -p $OUTDIR
 export PATH=$PATH:~/workspace/btp/klee/build/bin/
