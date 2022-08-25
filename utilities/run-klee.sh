@@ -21,7 +21,13 @@ export PATH=$PATH:~/workspace/btp/klee/build/bin/
 # Build utilities/polybench.c then llvm-link it to each .bc
 $CC $CFLAGS utilities/polybench.c -o $OUTDIR/polybench.bc
 
-SRCS=($(cat utilities/benchmark_list))
+if [ $# -eq 0 ]
+then
+  SRCS=($(cat utilities/benchmark_list))
+else
+  SRCS="$@"
+fi
+
 
 for each in "${SRCS[@]}"
 do
