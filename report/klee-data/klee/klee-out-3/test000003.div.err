@@ -1,0 +1,9 @@
+Error: divide by zero
+File: ./linear-algebra/kernels/3mm/3mm.c
+Line: 43
+assembly.ll line: 362
+State: 4
+Stack: 
+	#000001026 in klee_div_zero_check(symbolic) at runtime/Intrinsic/klee_div_zero_check.c:14
+	#100000362 in init_array(symbolic, symbolic, symbolic, symbolic, symbolic, 94109804093440, 94109810499584, 94109825622016, 94109834264576) at ./linear-algebra/kernels/3mm/3mm.c:43
+	#200000124 in main(1, 94109795953664) at ./linear-algebra/kernels/3mm/3mm.c:138

@@ -1,0 +1,7 @@
+Error: failed external call: assert
+File: ./linear-algebra/kernels/mvt/mvt.c
+Line: 124
+assembly.ll line: 90
+State: 2
+Stack: 
+	#000000090 in main(1, 93849089489920) at ./linear-algebra/kernels/mvt/mvt.c:124

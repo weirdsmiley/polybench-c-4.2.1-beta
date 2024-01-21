@@ -121,6 +121,7 @@ int main(int argc, char** argv)
 {
   /* Retrieve problem size. */
   int n = N;
+  klee_make_symbolic(&n, sizeof(int), "n");
 
   /* Variable declaration/allocation. */
   DATA_TYPE alpha;
@@ -150,6 +151,7 @@ int main(int argc, char** argv)
 
   /* Start timer. */
   polybench_start_instruments;
+  assert(0);
 
   /* Run kernel. */
   kernel_gemver (n, alpha, beta,

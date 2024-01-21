@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/blas/gesummv/gesummv.c
+Line: 39
+assembly.ll line: 192
+State: 1
+Stack: 
+	#000000192 in init_array(1300, 94720559395528, 94720559395544, 94720562282496, 94720575807488, 94720561983488) at ./linear-algebra/blas/gesummv/gesummv.c:39
+	#100000085 in main(1, 94720559749120) at ./linear-algebra/blas/gesummv/gesummv.c:115
+Info: 
+	address: 94720561983488
+	next: object at 94720559122176 of size 9
+		MO42[9] allocated at main():  %3 = alloca i32, align 4

@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./stencils/jacobi-2d/jacobi-2d.c
+Line: 35
+assembly.ll line: 156
+State: 1
+Stack: 
+	#000000156 in init_array(1300, 94034431631360, 94034445156352) at ./stencils/jacobi-2d/jacobi-2d.c:35
+	#100000064 in main(1, 94034429125632) at ./stencils/jacobi-2d/jacobi-2d.c:99
+Info: 
+	address: 94034431631360
+	next: object at 94034428503824 of size 16
+		MO2[16] allocated at main():  %3 = alloca i32, align 4

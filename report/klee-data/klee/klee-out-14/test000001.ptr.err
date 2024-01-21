@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/blas/trmm/trmm.c
+Line: 38
+assembly.ll line: 187
+State: 1
+Stack: 
+	#000000187 in init_array(1000, 1200, 94128648491368, 94128651354112, 94128659357696) at ./linear-algebra/blas/trmm/trmm.c:38
+	#100000070 in main(1, 94128650066944) at ./linear-algebra/blas/trmm/trmm.c:109
+Info: 
+	address: 94128651354112
+	next: object at 94128648218528 of size 16
+		MO44[16] allocated at main():  %3 = alloca i32, align 4

@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/solvers/gramschmidt/gramschmidt.c
+Line: 35
+assembly.ll line: 187
+State: 1
+Stack: 
+	#000000187 in init_array(1000, 1200, 94008547934208, 94008557535232, 94008569061376) at ./linear-algebra/solvers/gramschmidt/gramschmidt.c:35
+	#100000076 in main(1, 94008545408000) at ./linear-algebra/solvers/gramschmidt/gramschmidt.c:123
+Info: 
+	address: 94008547934208
+	next: object at 94008544798816 of size 14
+		MO20[14] allocated at main():  %3 = alloca i32, align 4

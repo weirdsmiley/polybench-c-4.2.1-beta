@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./stencils/adi/adi.c
+Line: 34
+assembly.ll line: 170
+State: 1
+Stack: 
+	#000000170 in init_array(1000, 94638864801792) at ./stencils/adi/adi.c:34
+	#100000072 in main(1, 94638863585280) at ./stencils/adi/adi.c:145
+Info: 
+	address: 94638864801792
+	next: object at 94638861683088 of size 12
+		MO1[12] allocated at main():  %3 = alloca i32, align 4

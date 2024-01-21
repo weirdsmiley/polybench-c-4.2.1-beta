@@ -1,0 +1,22 @@
+array ni[4] : w32 -> w8 = symbolic
+array nj[4] : w32 -> w8 = symbolic
+array nk[4] : w32 -> w8 = symbolic
+array nl[4] : w32 -> w8 = symbolic
+array nm[4] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Slt 0
+                  (ReadLSB w32 0 ni)))
+         (Eq false
+             (Slt 0
+                  N0:(ReadLSB w32 0 nk)))
+         (Eq false
+             (Slt 0
+                  (ReadLSB w32 0 nj)))
+         (Slt 0
+              (ReadLSB w32 0 nm))
+         (Slt 0
+              (ReadLSB w32 0 nl))
+         (Eq false (Eq 0 N0))
+         (Eq 2 (SRem w32 2 N0))
+         (Eq 2147483648 (Mul w32 5 N0))]
+        false)

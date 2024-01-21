@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/solvers/cholesky/cholesky.c
+Line: 34
+assembly.ll line: 145
+State: 1
+Stack: 
+	#000000145 in init_array(2000, 94444219637760) at ./linear-algebra/solvers/cholesky/cholesky.c:34
+	#100000057 in main(1, 94444217128960) at ./linear-algebra/solvers/cholesky/cholesky.c:118
+Info: 
+	address: 94444219637760
+	next: object at 94444216518800 of size 16
+		MO44[16] allocated at main():  %3 = alloca i32, align 4

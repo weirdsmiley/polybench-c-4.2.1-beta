@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./stencils/heat-3d/heat-3d.c
+Line: 35
+assembly.ll line: 170
+State: 1
+Stack: 
+	#000000170 in init_array(120, 94407016169472, 94407029997568) at ./stencils/heat-3d/heat-3d.c:35
+	#100000064 in main(1, 94407014966272) at ./stencils/heat-3d/heat-3d.c:111
+Info: 
+	address: 94407029997568
+	next: object at 94407013108128 of size 16
+		MO1[16] allocated at main():  %3 = alloca i32, align 4

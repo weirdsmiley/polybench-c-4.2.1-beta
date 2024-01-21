@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./medley/floyd-warshall/floyd-warshall.c
+Line: 33
+assembly.ll line: 132
+State: 1
+Stack: 
+	#000000132 in init_array(2800, 94710868779008) at ./medley/floyd-warshall/floyd-warshall.c:33
+	#100000054 in main(1, 94710866493440) at ./medley/floyd-warshall/floyd-warshall.c:92
+Info: 
+	address: 94710868779008
+	next: object at 94710865872432 of size 15
+		MO41[15] allocated at main():  %3 = alloca i32, align 4

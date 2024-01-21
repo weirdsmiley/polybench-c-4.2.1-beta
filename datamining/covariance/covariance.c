@@ -13,6 +13,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <math.h>
+#include "klee/klee.h"
 
 /* Include polybench common header. */
 #include <polybench.h>
@@ -101,6 +102,8 @@ int main(int argc, char** argv)
   /* Retrieve problem size. */
   int n = N;
   int m = M;
+  klee_make_symbolic(&n, sizeof(int), "n");
+  klee_make_symbolic(&m, sizeof(int), "m");
 
   /* Variable declaration/allocation. */
   DATA_TYPE float_n;
@@ -114,6 +117,7 @@ int main(int argc, char** argv)
 
   /* Start timer. */
   polybench_start_instruments;
+  assert(0);
 
   /* Run kernel. */
   kernel_covariance (m, n, float_n,

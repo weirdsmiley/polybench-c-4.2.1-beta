@@ -1,0 +1,11 @@
+Error: memory error: invalid pointer: make_symbolic
+File: ./stencils/seidel-2d/seidel-2d.c
+Line: 85
+assembly.ll line: 55
+State: 1
+Stack: 
+	#000000055 in main(1, 94903253451776) at ./stencils/seidel-2d/seidel-2d.c:85
+Info: 
+	address: 2000
+	next: object at 94903252543024 of size 15
+		MO30[15] allocated at main():  %3 = alloca i32, align 4

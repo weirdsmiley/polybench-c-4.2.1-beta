@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/solvers/trisolv/trisolv.c
+Line: 35
+assembly.ll line: 144
+State: 1
+Stack: 
+	#000000144 in init_array(2000, 94456208072704, 94456205680640, 94456207769600) at ./linear-algebra/solvers/trisolv/trisolv.c:35
+	#100000068 in main(1, 94456205777920) at ./linear-algebra/solvers/trisolv/trisolv.c:98
+Info: 
+	address: 94456205680640
+	next: object at 94456205149936 of size 16
+		MO1[16] allocated at main():  %3 = alloca i32, align 4

@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./medley/deriche/deriche.c
+Line: 37
+assembly.ll line: 187
+State: 1
+Stack: 
+	#000000187 in init_array(4096, 2160, 94631912135944, 94631915274240, 94631950663680) at ./medley/deriche/deriche.c:37
+	#100000077 in main(1, 94631912466432) at ./medley/deriche/deriche.c:173
+Info: 
+	address: 94631915274240
+	next: object at 94631911860976 of size 16
+		MO1[16] allocated at main():  %3 = alloca i32, align 4

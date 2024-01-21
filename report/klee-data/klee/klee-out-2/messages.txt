@@ -1,0 +1,14 @@
+KLEE: Using Z3 solver backend
+KLEE: ERROR: ./linear-algebra/kernels/2mm/2mm.c:139: failed external call: assert
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./linear-algebra/kernels/2mm/2mm.c:41: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./linear-algebra/kernels/2mm/2mm.c:44: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./linear-algebra/kernels/2mm/2mm.c:50: divide by zero
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./linear-algebra/kernels/2mm/2mm.c:47: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./linear-algebra/kernels/2mm/2mm.c:50: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: halting execution, dumping remaining states

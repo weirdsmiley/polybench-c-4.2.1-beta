@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/solvers/ludcmp/ludcmp.c
+Line: 37
+assembly.ll line: 171
+State: 1
+Stack: 
+	#000000171 in init_array(2000, 93856420642816, 93856419274752, 93856420511744, 93856420364288) at ./linear-algebra/solvers/ludcmp/ludcmp.c:37
+	#100000078 in main(1, 93856419226624) at ./linear-algebra/solvers/ludcmp/ludcmp.c:153
+Info: 
+	address: 93856420511744
+	next: object at 93856417311296 of size 15
+		MO1[15] allocated at main():  %3 = alloca i32, align 4

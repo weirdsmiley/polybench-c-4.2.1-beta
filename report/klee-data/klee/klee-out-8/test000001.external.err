@@ -1,0 +1,7 @@
+Error: failed external call: assert
+File: ./linear-algebra/blas/gemm/gemm.c
+Line: 128
+assembly.ll line: 93
+State: 4
+Stack: 
+	#000000093 in main(1, 94202675282944) at ./linear-algebra/blas/gemm/gemm.c:128

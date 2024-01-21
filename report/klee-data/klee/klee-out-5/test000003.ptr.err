@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/kernels/bicg/bicg.c
+Line: 37
+assembly.ll line: 227
+State: 2
+Stack: 
+	#000000227 in init_array(symbolic, symbolic, 94690437013504, 94690436771840, 94690435366912) at ./linear-algebra/kernels/bicg/bicg.c:37
+	#100000092 in main(1, 94690434727936) at ./linear-algebra/kernels/bicg/bicg.c:116
+Info: 
+	address: 94690436771840
+	next: object at 94690433861712 of size 16
+		MO44[16] allocated at main():  %3 = alloca i32, align 4

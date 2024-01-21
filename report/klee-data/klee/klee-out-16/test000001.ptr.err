@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/solvers/durbin/durbin.c
+Line: 33
+assembly.ll line: 129
+State: 1
+Stack: 
+	#000000129 in init_array(2000, 94681290178560) at ./linear-algebra/solvers/durbin/durbin.c:33
+	#100000059 in main(1, 94681288172544) at ./linear-algebra/solvers/durbin/durbin.c:109
+Info: 
+	address: 94681290178560
+	next: object at 94681287550688 of size 15
+		MO1[15] allocated at main():  %3 = alloca i32, align 4

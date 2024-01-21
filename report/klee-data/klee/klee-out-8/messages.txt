@@ -1,0 +1,10 @@
+KLEE: Using Z3 solver backend
+KLEE: ERROR: ./linear-algebra/blas/gemm/gemm.c:128: failed external call: assert
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./linear-algebra/blas/gemm/gemm.c:40: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./linear-algebra/blas/gemm/gemm.c:46: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./linear-algebra/blas/gemm/gemm.c:43: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: halting execution, dumping remaining states

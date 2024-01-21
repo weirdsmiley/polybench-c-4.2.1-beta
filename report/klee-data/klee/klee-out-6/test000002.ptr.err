@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/kernels/doitgen/doitgen.c
+Line: 39
+assembly.ll line: 429
+State: 2
+Stack: 
+	#000000429 in init_array(symbolic, symbolic, symbolic, 93891285303296, 93891312189440) at ./linear-algebra/kernels/doitgen/doitgen.c:39
+	#100000248 in main(1, 93891282994176) at ./linear-algebra/kernels/doitgen/doitgen.c:105
+Info: 
+	address: 93891312189440
+	next: object at 93891282110416 of size 16
+		MO39[16] allocated at main():  %3 = alloca i32, align 4

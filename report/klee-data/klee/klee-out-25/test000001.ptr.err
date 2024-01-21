@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./stencils/fdtd-2d/fdtd-2d.c
+Line: 37
+assembly.ll line: 184
+State: 1
+Stack: 
+	#000000184 in init_array(500, 1000, 1200, 94805960294400, 94805969895424, 94805979496448, 94805958627328) at ./stencils/fdtd-2d/fdtd-2d.c:37
+	#100000085 in main(1, 94805958934528) at ./stencils/fdtd-2d/fdtd-2d.c:136
+Info: 
+	address: 94805958627328
+	next: object at 94805957020096 of size 16
+		MO1[16] allocated at main():  %3 = alloca i32, align 4

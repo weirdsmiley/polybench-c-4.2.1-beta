@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./datamining/correlation/correlation.c
+Line: 38
+assembly.ll line: 188
+State: 1
+Stack: 
+	#000000188 in init_array(symbolic, symbolic, 94066706896760, 94066709676032) at ./datamining/correlation/correlation.c:38
+	#100000081 in main(1, 94066708471808) at ./datamining/correlation/correlation.c:144
+Info: 
+	address: 94066709676032
+	next: object at 94066706622416 of size 16
+		MO2[16] allocated at main():  %3 = alloca i32, align 4

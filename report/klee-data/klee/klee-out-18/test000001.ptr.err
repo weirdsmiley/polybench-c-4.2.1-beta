@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/solvers/lu/lu.c
+Line: 34
+assembly.ll line: 145
+State: 1
+Stack: 
+	#000000145 in init_array(2000, 94089946554368) at ./linear-algebra/solvers/lu/lu.c:34
+	#100000057 in main(1, 94089944062976) at ./linear-algebra/solvers/lu/lu.c:116
+Info: 
+	address: 94089946554368
+	next: object at 94089943451584 of size 15
+		MO41[15] allocated at main():  %3 = alloca i32, align 4

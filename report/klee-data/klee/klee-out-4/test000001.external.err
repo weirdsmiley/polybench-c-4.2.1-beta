@@ -1,0 +1,7 @@
+Error: failed external call: assert
+File: ./linear-algebra/kernels/atax/atax.c
+Line: 109
+assembly.ll line: 85
+State: 2
+Stack: 
+	#000000085 in main(1, 94533002739712) at ./linear-algebra/kernels/atax/atax.c:109

@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/blas/gemm/gemm.c
+Line: 46
+assembly.ll line: 321
+State: 2
+Stack: 
+	#000000321 in init_array(symbolic, symbolic, symbolic, 94202674951328, 94202674951344, 94202677895168, 94202686701568, 94202696302592) at ./linear-algebra/blas/gemm/gemm.c:46
+	#100000092 in main(1, 94202675282944) at ./linear-algebra/blas/gemm/gemm.c:121
+Info: 
+	address: 94202696302592
+	next: object at 94202674677712 of size 15
+		MO30[15] allocated at main():  %3 = alloca i32, align 4

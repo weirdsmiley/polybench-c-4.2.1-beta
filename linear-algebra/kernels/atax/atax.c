@@ -13,6 +13,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <math.h>
+#include "klee/klee.h"
 
 /* Include polybench common header. */
 #include <polybench.h>
@@ -91,6 +92,8 @@ int main(int argc, char** argv)
   /* Retrieve problem size. */
   int m = M;
   int n = N;
+  klee_make_symbolic(&m, sizeof(int), "m");
+  klee_make_symbolic(&n, sizeof(int), "n");
 
   /* Variable declaration/allocation. */
   POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, M, N, m, n);
@@ -103,6 +106,7 @@ int main(int argc, char** argv)
 
   /* Start timer. */
   polybench_start_instruments;
+  assert(0);
 
   /* Run kernel. */
   kernel_atax (m, n,

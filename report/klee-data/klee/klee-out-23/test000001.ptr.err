@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./medley/nussinov/nussinov.c
+Line: 39
+assembly.ll line: 133
+State: 1
+Stack: 
+	#000000133 in init_array(2500, 93904108986368, 93904109961216) at ./medley/nussinov/nussinov.c:39
+	#100000061 in main(1, 93904108593152) at ./medley/nussinov/nussinov.c:122
+Info: 
+	address: 93904108986368
+	next: object at 93904106735984 of size 16
+		MO2[16] allocated at main():  %3 = alloca i32, align 4

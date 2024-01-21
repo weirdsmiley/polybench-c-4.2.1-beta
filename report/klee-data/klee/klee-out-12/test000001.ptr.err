@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/blas/syr2k/syr2k.c
+Line: 39
+assembly.ll line: 196
+State: 1
+Stack: 
+	#000000196 in init_array(1200, 1000, 93901773607808, 93901773607824, 93901776502784, 93901788028928, 93901797629952) at ./linear-algebra/blas/syr2k/syr2k.c:39
+	#100000079 in main(1, 93901773945856) at ./linear-algebra/blas/syr2k/syr2k.c:116
+Info: 
+	address: 93901788028928
+	next: object at 93901773334656 of size 14
+		MO1[14] allocated at main():  %3 = alloca i32, align 4

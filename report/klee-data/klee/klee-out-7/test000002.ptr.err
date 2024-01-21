@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/kernels/mvt/mvt.c
+Line: 38
+assembly.ll line: 195
+State: 1
+Stack: 
+	#000000195 in init_array(symbolic, 93849092661248, 93849091137536, 93849091153920, 93849092513792, 93849092775936) at ./linear-algebra/kernels/mvt/mvt.c:38
+	#100000089 in main(1, 93849089489920) at ./linear-algebra/kernels/mvt/mvt.c:115
+Info: 
+	address: 93849092661248
+	next: object at 93849089489920 of size 952
+		MO0[952] allocated at main():  %3 = alloca i32, align 4

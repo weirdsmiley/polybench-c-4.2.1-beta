@@ -1,0 +1,8 @@
+Error: Query timed out (fork).
+File: ./linear-algebra/kernels/atax/atax.c
+Line: 37
+assembly.ll line: 193
+State: 1
+Stack: 
+	#000000193 in init_array(symbolic, symbolic, 94533005271040, 94533004992512) at ./linear-algebra/kernels/atax/atax.c:37
+	#100000084 in main(1, 94533002739712) at ./linear-algebra/kernels/atax/atax.c:105

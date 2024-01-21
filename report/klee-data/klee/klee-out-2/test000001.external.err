@@ -1,0 +1,7 @@
+Error: failed external call: assert
+File: ./linear-algebra/kernels/2mm/2mm.c
+Line: 139
+assembly.ll line: 112
+State: 7
+Stack: 
+	#000000112 in main(1, 94518534679552) at ./linear-algebra/kernels/2mm/2mm.c:139

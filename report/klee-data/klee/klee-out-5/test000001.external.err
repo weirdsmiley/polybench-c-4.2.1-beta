@@ -1,0 +1,7 @@
+Error: failed external call: assert
+File: ./linear-algebra/kernels/bicg/bicg.c
+Line: 123
+assembly.ll line: 93
+State: 3
+Stack: 
+	#000000093 in main(1, 94690434727936) at ./linear-algebra/kernels/bicg/bicg.c:123

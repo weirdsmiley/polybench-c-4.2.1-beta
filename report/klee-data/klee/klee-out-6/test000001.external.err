@@ -1,0 +1,7 @@
+Error: failed external call: assert
+File: ./linear-algebra/kernels/doitgen/doitgen.c
+Line: 111
+assembly.ll line: 249
+State: 3
+Stack: 
+	#000000249 in main(1, 93891282994176) at ./linear-algebra/kernels/doitgen/doitgen.c:111

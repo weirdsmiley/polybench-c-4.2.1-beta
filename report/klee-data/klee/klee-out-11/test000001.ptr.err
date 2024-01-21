@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: ./linear-algebra/blas/symm/symm.c
+Line: 39
+assembly.ll line: 190
+State: 1
+Stack: 
+	#000000190 in init_array(1000, 1200, 94134149796872, 94134149796888, 94134152642560, 94134162243584, 94134170247168) at ./linear-algebra/blas/symm/symm.c:39
+	#100000076 in main(1, 94134151348224) at ./linear-algebra/blas/symm/symm.c:122
+Info: 
+	address: 94134152642560
+	next: object at 94134149523648 of size 13
+		MO1[13] allocated at main():  %3 = alloca i32, align 4
